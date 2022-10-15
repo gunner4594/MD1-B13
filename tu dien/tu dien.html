@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+Nhập từ:
+<input type="text" id="nhap" style="width: 100px">
+<input type="button" value="Dịch" onclick="check()">
+<p id="result" ></p>
+
+<script>
+function check () {
+    a = document.getElementById('nhap').value;
+  let arr1 = ['i','like','football'];
+  let arr2 = ['tôi','yêu','bóng đá'];
+  for (i=0;i<arr1.length;i++) {
+     if (arr1[i]===a) {
+         document.getElementById('result').innerHTML= arr2[i]
+     }
+  }
+}
+</script>
+</body>
+</html>
